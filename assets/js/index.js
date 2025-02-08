@@ -35,3 +35,29 @@ function setActive(event) {
     event.target.classList.add("border-b", "border-black", "pb-1");
 }
 menuLinks.forEach(link => link.addEventListener("click", setActive));
+
+
+// accordian icon
+document.querySelectorAll('[data-accordion-target]').forEach(button => {
+    button.addEventListener('click', function () {
+        const target = document.querySelector(this.getAttribute('data-accordion-target'));
+        const icon = this.querySelector('.accordion-icon');
+        document.querySelectorAll('[data-accordion-target]').forEach(btn => {
+            const otherTarget = document.querySelector(btn.getAttribute('data-accordion-target'));
+            const otherIcon = btn.querySelector('.accordion-icon');
+            if (otherTarget !== target) {
+                otherTarget.classList.add('hidden');
+                otherIcon.textContent = '+';
+            }
+        });
+        if (target.classList.contains('hidden')) {
+            target.classList.remove('hidden');
+            icon.textContent = '−';
+        } else {
+            target.classList.add('hidden');
+            icon.textContent = '+';
+        }
+    });
+});
+
+
