@@ -61,3 +61,25 @@ document.querySelectorAll('[data-accordion-target]').forEach(button => {
 });
 
 
+
+// service page 
+
+$(document).ready(function(){
+    $(".expertise-carousel").owlCarousel({
+        loop: true,           
+        margin: 10,           
+        nav: true,            
+        dots: false,           
+        autoplay: true,       
+        autoplayTimeout: 3000,
+        navText: ["<span class='custom-prev'>&#10094;</span>", "<span class='custom-next'>&#10095;</span>"],
+        responsive:{
+            0:{ items: 1 },   
+            600:{ items: 1 }, 
+            1000:{ items: 1 } 
+        }
+    });
+});
+
+
+

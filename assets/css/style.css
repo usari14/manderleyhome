@@ -1,44 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luxurious+Script&family=Manrope:wght@200..800&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 @theme {
-    /* --color-primary: #fff;
-    --color-secondary: #24182E;
-    --color-accent: #FDD6DE;
-    --color-bgcolor: #E6F8F9;
-    --color-footerbg: #250E3E;
-    --color-textclr: #4B4B4B;
-    --color-textclr2: #F9F5E3; */
-    /* --font-pacifico: "Pacifico", cursive, sans-serif; */
-    /* --font-primary: "Poppins", sans-serif; */
+  --color-primary: #191919;
+  --color-secondary: #CBC4AD;
+  --color-accent: #353424;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: serif;
-    overflow-x: hidden;
-    font-display: swap;
+  font-family: serif;
+  overflow-x: hidden;
+  font-display: swap;
 }
 
-p{
-    font-size: 15px;
+p {
+  font-size: 15px;
 }
 
 .container {
-    max-width: 1200px;
+  max-width: 1200px;
+}
+
+input[type="checkbox"] {
+  accent-color: #353424;
+  width: 15px;
+  height: 15px; /* Change to your desired color */
 }
 
 .commonblock {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
+.heading {
+  font-size: 51px;
+  line-height: 54px;
+}
+
+.sheading {
+  font-size: 15px;
+}
+
+.mheading {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+
 #sidebar {
-    display: none;
+  display: none;
 }
 
 .font-luxurious {
-    font-family: "Luxurious Script", serif;
+  font-family: "Luxurious Script", serif;
 }
 
+
+
+/* carousel nav */
+.expertise-carousel .owl-nav button.owl-next,
+.expertise-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  font-size: 20px;
+
+}
+
+.expertise-carousel .owl-nav button.owl-next span,
+.expertise-carousel .owl-nav button.owl-prev span {
+  color: white !important;
+}
+
+
+.expertise-carousel .owl-nav button.owl-next {
+  right: 12%;
+  top: -40%;
+}
+
+.expertise-carousel .owl-nav button.owl-prev {
+  left: 85%;
+  top: -40%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .expertise-carousel .owl-nav button.owl-next,
+  .expertise-carousel .owl-nav button.owl-prev {
+    display: none;
+
+  }
+}

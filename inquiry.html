@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ManderLey Home</title>
+    <meta name="description"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien at odio bibendum tincidunt." />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="bannernav">
+        <header class="relative overflow-visible">
+            <div class="w-full bg-[#CBC4AD] shadow-[0_10px_10px_rgba(0,0,0,0.1)]">
+                <div class="flex justify-end pr-14 py-9">
+                    <a href="#" id="sidebarToggle">
+                        <img src="./assets/images/logo.png" class="w-32 block cursor-pointer" alt="Logo">
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div id="sidebar"
+            class="fixed top-0 left-0 w-full h-full bg-white shadow-lg transform translate-x-full transition-transform duration-700 ease-in-out flex flex-col items-center justify-center z-50">
+            <div class="w-full flex justify-end pr-10">
+                <button id="closeSidebar">
+                    <img src="./assets/images/logo.png" class="w-40 block cursor-pointer" alt="">
+                </button>
+            </div>
+            <ul class="text-lg font-medium text-gray-800 space-y-10 text-center">
+                <li><a href="#"
+                        class="text-[#191919] text-5xl hover:text-gray-600 transition uppercase menu-link">Portfolio</a>
+                </li>
+                <li><a href="about.html"
+                        class="text-[#191919] text-5xl hover:text-gray-600 transition uppercase menu-link">About</a>
+                </li>
+                <li><a href="services.html"
+                        class="text-[#191919] text-5xl hover:text-gray-600 transition uppercase menu-link">Services</a>
+                </li>
+                <li><a href="inquiry.html"
+                        class="text-[#191919] text-5xl hover:text-gray-600 transition uppercase menu-link">Inquire</a>
+                </li>
+                <li><a href="index.html"
+                        class="text-[#191919] text-5xl hover:text-gray-600 transition uppercase menu-link">Home</a>
+                </li>
+                <li><a href="faq.html"
+                        class="text-[#191919] text-5xl hover:text-gray-600 transition uppercase menu-link">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="overflow-x-hidden">
+
+        <!-- Let’s talk dream design -->
+        <div class="bg-[#CBC4AD] commonblock">
+            <div class="container mx-auto pb-2 md:pb-10 px-3 xl:px-0">
+                <div
+                    class="grid grid-cols-1 lg:grid-cols-[35%_65%] border-b border-black pb-5 md:pb-28 overflow-hidden">
+                    <div>
+                        <h1 class="mheading mb-6">
+                            Let’s talk <span class="italic">dream</span> design.
+                        </h1>
+                        <p class="mb-3 pr-0 lg:pr-10">As an experienced design firm, we give our heart, soul, and
+                            dedication to
+                            every project we take on. That’s why our ideal projects are extensive in scale to allow for
+                            depth, cohesion, and creative freedom. While we do leave space for Elevated Interior
+                            Furnishing, the majority of our time is dedicated to extensive premium remodels and new home
+                            construction.</p>
+                        <div class="relative">
+                            <p class="mb-3 pr-0 lg:pr-10 relative z-10 ">
+                                Fill out our inquiry form when you’re ready to connect about the residential design you
+                                have in mind.
+                            </p>
+                            <img src="./assets/images/inquiry.png" class="w-40 absolute right-20 -top-4 z-0" alt="">
+                        </div>
+
+                    </div>
+                    <div>
+                        <form>
+                            <p class="mb-2">Name <span class="text-[#5A574E]">(required)</span></p>
+                            <div class="mb-4 grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm  text-[#2C2A25]">First Name</label>
+                                    <input type="text" class="w-full bg-white p-2 mt-1 h-[45px]" required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm  text-[#2C2A25]">Last Name</label>
+                                    <input type="text" class="w-full bg-white p-2 h-[45px] mt-1">
+                                </div>
+                            </div>
+
+                            <!-- Phone & Email -->
+                            <div class="mb-4">
+                                <label class="block text-sm  uppercase text-[#2C2A25]">Phone</label>
+                                <input type="tel" class="w-full h-[45px] bg-white p-2 mt-1">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-sm  uppercase text-[#2C2A25]">Email <span
+                                        class="text-[#5A574E] normal-case">(required)</span></label>
+                                <input type="email" class="w-full h-[45px] bg-white p-2 mt-1" required>
+                            </div>
+
+                            <!-- Services Interested In -->
+                            <div class="mb-4">
+                                <label class="block  text-[#2C2A25] mb-3">What Service Are You Interested In?
+                                    <span class="text-[#5A574E]">(required)</span></label>
+                                <p class="mb-2">Select all that apply.</p>
+                                <div class="mt-2 space-y-3">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">The Elevated
+                                            Interior (Furnishings & Interior Design)</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">The Remodel
+                                            (Remodels & Additions)</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">The Custom
+                                            Home (New Construction)</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">I’m not sure
+                                            yet!</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <p class="mb-4 text-[#2C2A25] text-sm">Property Address <span
+                                    class="text-[#5A574E]">(required)</span></p>
+                            <div class="mb-6">
+                                <label class="block text-[#2C2A25] text-sm">Country</label>
+                                <select class="w-full bg-white p-2 mt-1 h-[45px]">
+                                    <option value="AU">Australia</option>
+                                    <option value="AF">Afghanistan</option>
+                                    <option value="AL">Albania</option>
+                                    <option value="DZ">Algeria</option>
+                                    <option value="AD">Andorra</option>
+                                    <option value="AO">Angola</option>
+                                    <option value="AG">Antigua and Barbuda</option>
+                                    <option value="AR">Argentina</option>
+                                    <option value="AM">Armenia</option>
+                                    <option value="AT">Austria</option>
+                                    <option value="AZ">Azerbaijan</option>
+                                    <option value="BS">Bahamas</option>
+                                    <option value="BH">Bahrain</option>
+                                    <option value="BD">Bangladesh</option>
+                                    <option value="BB">Barbados</option>
+                                    <option value="BY">Belarus</option>
+                                    <option value="BE">Belgium</option>
+                                    <option value="BZ">Belize</option>
+                                    <option value="BJ">Benin</option>
+                                    <option value="BT">Bhutan</option>
+                                    <option value="BO">Bolivia</option>
+                                    <option value="BA">Bosnia and Herzegovina</option>
+                                    <option value="BW">Botswana</option>
+                                    <option value="BR">Brazil</option>
+                                    <option value="BN">Brunei</option>
+                                    <option value="BG">Bulgaria</option>
+                                    <option value="BF">Burkina Faso</option>
+                                    <option value="BI">Burundi</option>
+                                    <option value="KH">Cambodia</option>
+                                    <option value="CM">Cameroon</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="CV">Cape Verde</option>
+                                    <option value="CF">Central African Republic</option>
+                                    <option value="TD">Chad</option>
+                                    <option value="CL">Chile</option>
+                                    <option value="CN">China</option>
+                                    <option value="CO">Colombia</option>
+                                    <option value="KM">Comoros</option>
+                                    <option value="CG">Congo</option>
+                                    <option value="CR">Costa Rica</option>
+                                    <option value="HR">Croatia</option>
+                                    <option value="CU">Cuba</option>
+                                    <option value="CY">Cyprus</option>
+                                    <option value="CZ">Czech Republic</option>
+                                    <option value="DK">Denmark</option>
+                                    <option value="DJ">Djibouti</option>
+                                    <option value="DM">Dominica</option>
+                                    <option value="DO">Dominican Republic</option>
+                                    <option value="EC">Ecuador</option>
+                                    <option value="EG">Egypt</option>
+                                    <option value="SV">El Salvador</option>
+                                    <option value="GQ">Equatorial Guinea</option>
+                                    <option value="ER">Eritrea</option>
+                                    <option value="EE">Estonia</option>
+                                    <option value="ET">Ethiopia</option>
+                                    <option value="FJ">Fiji</option>
+                                    <option value="FI">Finland</option>
+                                    <option value="FR">France</option>
+                                    <option value="GA">Gabon</option>
+                                    <option value="GM">Gambia</option>
+                                    <option value="GE">Georgia</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="GH">Ghana</option>
+                                    <option value="GR">Greece</option>
+                                    <option value="GT">Guatemala</option>
+                                    <option value="GN">Guinea</option>
+                                    <option value="GY">Guyana</option>
+                                    <option value="HT">Haiti</option>
+                                    <option value="HN">Honduras</option>
+                                    <option value="HU">Hungary</option>
+                                    <option value="IS">Iceland</option>
+                                    <option value="IN">India</option>
+                                    <option value="ID">Indonesia</option>
+                                    <option value="IR">Iran</option>
+                                    <option value="IQ">Iraq</option>
+                                    <option value="IE">Ireland</option>
+                                    <option value="IT">Italy</option>
+                                    <option value="JM">Jamaica</option>
+                                    <option value="JP">Japan</option>
+                                    <option value="JO">Jordan</option>
+                                    <option value="KZ">Kazakhstan</option>
+                                    <option value="KE">Kenya</option>
+                                    <option value="KR">South Korea</option>
+                                    <option value="KW">Kuwait</option>
+                                    <option value="LA">Laos</option>
+                                    <option value="LV">Latvia</option>
+                                    <option value="LB">Lebanon</option>
+                                    <option value="LY">Libya</option>
+                                    <option value="LT">Lithuania</option>
+                                    <option value="LU">Luxembourg</option>
+                                    <option value="MG">Madagascar</option>
+                                    <option value="MY">Malaysia</option>
+                                    <option value="MV">Maldives</option>
+                                    <option value="ML">Mali</option>
+                                    <option value="MT">Malta</option>
+                                    <option value="MX">Mexico</option>
+                                    <option value="MC">Monaco</option>
+                                    <option value="MN">Mongolia</option>
+                                    <option value="MA">Morocco</option>
+                                    <option value="MZ">Mozambique</option>
+                                    <option value="MM">Myanmar</option>
+                                    <option value="NA">Namibia</option>
+                                    <option value="NP">Nepal</option>
+                                    <option value="NL">Netherlands</option>
+                                    <option value="NZ">New Zealand</option>
+                                    <option value="NI">Nicaragua</option>
+                                    <option value="NG">Nigeria</option>
+                                    <option value="NO">Norway</option>
+                                    <option value="OM">Oman</option>
+                                    <option value="PK">Pakistan</option>
+                                    <option value="PA">Panama</option>
+                                    <option value="PG">Papua New Guinea</option>
+                                    <option value="PY">Paraguay</option>
+                                    <option value="PE">Peru</option>
+                                    <option value="PH">Philippines</option>
+                                    <option value="PL">Poland</option>
+                                    <option value="PT">Portugal</option>
+                                    <option value="QA">Qatar</option>
+                                    <option value="RO">Romania</option>
+                                    <option value="RU">Russia</option>
+                                    <option value="RW">Rwanda</option>
+                                    <option value="SA">Saudi Arabia</option>
+                                    <option value="SN">Senegal</option>
+                                    <option value="RS">Serbia</option>
+                                    <option value="SG">Singapore</option>
+                                    <option value="SK">Slovakia</option>
+                                    <option value="SI">Slovenia</option>
+                                    <option value="ZA">South Africa</option>
+                                    <option value="ES">Spain</option>
+                                    <option value="LK">Sri Lanka</option>
+                                    <option value="SD">Sudan</option>
+                                    <option value="SE">Sweden</option>
+                                    <option value="CH">Switzerland</option>
+                                    <option value="TH">Thailand</option>
+                                    <option value="TR">Turkey</option>
+                                    <option value="UA">Ukraine</option>
+                                    <option value="AE">United Arab Emirates</option>
+                                    <option value="GB">United Kingdom</option>
+                                    <option value="US">United States</option>
+                                    <option value="UY">Uruguay</option>
+                                    <option value="VN">Vietnam</option>
+                                    <option value="ZM">Zambia</option>
+                                    <option value="ZW">Zimbabwe</option>
+                                </select>
+                            </div>
+
+                            <!-- Budget -->
+                            <div class="mb-6">
+                                <label class="block text-[#2C2A25] text-sm ">Address Line 1 <span
+                                        class="text-[#5A574E]">(required)</span></label>
+                                <input type="text" class="w-full h-[45px] bg-white p-2 mt-1">
+                            </div>
+
+                            <div class="mb-6">
+                                <label class="block text-[#2C2A25] text-sm ">Address Line 2</label>
+                                <input type="text" class="w-full h-[45px] bg-white p-2 mt-1">
+                            </div>
+
+                            <div class="mb-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                <div>
+                                    <label class="block text-sm  text-[#2C2A25]">Suburb <span
+                                            class="text-[#5A574E]">(required)</span></label>
+                                    <input type="text" class="w-full h-[45px] bg-white p-2 mt-1" required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm  text-[#2C2A25]">State <span
+                                            class="text-[#5A574E]">(required)</span></label>
+                                    <input type="text" class="w-full h-[45px] bg-white p-2 mt-1">
+                                </div>
+                                <div>
+                                    <label class="block text-sm  text-[#2C2A25]">Postcode <span
+                                            class="text-[#5A574E]">(required)</span></label>
+                                    <input type="text" class="w-full h-[45px] bg-white p-2 mt-1">
+                                </div>
+                            </div>
+
+                            <!-- Start Date -->
+                            <div class="mb-6">
+                                <label class="block text-sm  text-[#2C2A25]">What is the approximate project square
+                                    footage? <span class="text-[#5A574E]">(required)</span></label>
+                                <input type="text" class="w-full h-[45px] bg-white p-2 mt-1">
+                            </div>
+
+                            <p class="text-sm text-[#2C2A25] mb-3">What is your budget for this project? <span
+                                    class="text-[#5A574E]">(required)</span></p>
+                            <p class="text-sm text-[#5A574E] mb-4">Please note we have a 3 room minimum. Our furnishing
+                                budget typically starts at $30K per room. Remodel budgets begin at 600k.</p>
+                            <select class="w-full h-[45px] bg-white p-2 mt-1 mb-6">
+                                <option>Select an option</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+
+                            <div class="mb-6">
+                                <label class="block text-[#2C2A25] text-sm uppercase mb-1">Do you have a start date in
+                                    mind?</label>
+                                <input type="date" class="bg-white h-[45px] p-2 mt-1 w-[200px]">
+                            </div>
+
+                            <div class="mb-6">
+                                <label class="block  text-[#2C2A25] mb-3">Please Check All That Apply <span
+                                        class="text-[#5A574E]">(required)</span></label>
+                                <div class="mt-2 space-y-3">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">I’m currently
+                                            working with an architect or contractor</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">I’m just
+                                            starting conversations with potential vendors.</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">I’ve already
+                                            secured some project partners (deposits paid!)</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">We’ve
+                                            submitted permits for this project</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">We’ve already
+                                            obtained permits for this project</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">No
+                                            construction is needed for this project.</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="mb-6">
+                                <label class="block text-[#2C2A25] text-sm uppercase">Have you worked with a designer
+                                    before? <span class="text-[#5A574E] normal-case">(required)</span>
+                                </label>
+                                <select class="w-full bg-white h-[45px] p-2 mt-1">
+                                    <option>Select an option</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-6">
+                                <label class="block font-medium text-sm uppercase">WHAT BRINGS YOU HERE? / IS THERE
+                                    ANYTHING I
+                                    SHOULD KNOW ABOUT THIS PROJECT?</label>
+                                <textarea class="w-full bg-white p-2 text-[13px] mt-1" rows="3"></textarea>
+                            </div>
+
+                            <div class="mb-6">
+                                <label class="block  text-[#2C2A25] mb-3">Please check all the rooms within the scope of
+                                    this work. <span class="text-[#5A574E]">(required)</span></label>
+                                <div class="mt-2 space-y-3">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">
+                                            Entry/Foyer/Mud Room</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">
+                                            Powder Room</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">Living
+                                            Room</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">Family
+                                            Room</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">Kitchen</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">Dining
+                                            Room</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">Primary
+                                            Bedroom</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">Guest
+                                            Bedroom</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">Primary
+                                            Bathroom</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">Guest
+                                            Bathroom</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">Laundry
+                                            Room</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span
+                                            class="text-[#2C2A25]">Office(s)</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">Guest
+                                            House/Apartment</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2"> <span class="text-[#2C2A25]">Outdoor
+                                            Areas</span>
+                                    </label>
+
+                                </div>
+                            </div>
+
+
+                            <!-- Submit Button -->
+                            <div class="mt-6">
+                                <button type="submit"
+                                    class="bg-black text-white py-4 text-lg px-8 cursor-pointer">Submit
+                                    Form</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center md:justify-between mt-3 md:mt-16 gap-7 md:gap-0">
+                    <div class="text-center md:text-left">
+                        <h3 class="sheading mb-1 md:mb-4 tracking-widest">PRESS</h3>
+                        <p class="w-[340px]">
+                            Please visit our press page to view our latest publications and to contact someone on our
+                            team about your collaboration or placement opportunity.
+                        </p>
+                    </div>
+                    <div class="text-center md:text-right tracking-widest">
+                        <h3 class="sheading mb-1 md:mb-4">OFFICE HOURS</h3>
+                        <p>Monday - Friday</p>
+                        <p>9AM - 3PM</p>
+                        <p>BY APPOINTMENT ONLY</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="bg-white">
+        <div class="container mx-auto py-7 md:py-20 px-6">
+            <div
+                class="grid gap-6 md:gap-16 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-[25%_40%_35%] text-center md:text-left">
+                <div class="flex justify-center md:justify-start">
+                    <img src="./assets/images/footerlogo.png" class="mt-6 md:mt-14 w-40 md:w-full" alt="Footer Logo">
+                </div>
+                <div class="flex flex-col items-center md:items-start gap-6 md:gap-14">
+                    <a href="#" class="text-black text-[15px] leading-4 tracking-widest">/INQUIRE NOW</a>
+                    <p class="text-[15px] md:pr-24">Manderley Home is a new construction and premium remodel,
+                        full-service
+                        interior design firm in Danville, California and the San Francisco Bay Area.</p>
+                </div>
+                <div class="flex flex-col items-center md:items-start gap-6 md:gap-14">
+                    <a href="#" class="text-black text-[15px] leading-4 tracking-widest">/SOCIAL</a>
+                    <div class="flex justify-center md:justify-start gap-x-12">
+                        <a href="#" class="text-[27px] leading-9 font-luxurious">Pinterest</a>
+                        <a href="#" class="text-[27px] leading-9 font-luxurious">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#353424]">
+            <div class="container mx-auto py-4 px-3 xl:px-0">
+                <div class="flex flex-col md:flex-row items-center gap-3 md:gap-0 md:justify-between">
+                    <p class="text-[15px] text-white order order-2 md:order-1">© MANDERLEY HOME 2025. All rights
+                        reserved.</p>
+                        <ul class="flex gap-3 order order-1 md:order-2">
+                            <li class="group">
+                                <a href="#" class="text-white sheading underline group-hover:no-underline">Site
+                                    Credit</a>
+                            </li>
+                            <li class="group">
+                                <a href="#" class="text-white sheading underline group-hover:no-underline">Press</a>
+                            </li>
+                            <li class="group">
+                                <a href="careers.html" class="text-white sheading underline group-hover:no-underline">Careers</a>
+                            </li>
+                            <li class="group">
+                                <a href="faq.html" class="text-white sheading underline group-hover:no-underline">FAQ's</a>
+                            </li>
+                            <li class="group">
+                                <a href="t&c.html" class="text-white sheading underline group-hover:no-underline">T&C</a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="./assets/js/index.js"></script>
+
+</body>
+
+</html
