@@ -28,13 +28,24 @@ document.addEventListener('click', (event) => {
 
 // active class
 
-const menuLinks = document.querySelectorAll(".menu-link");
+document.addEventListener("DOMContentLoaded", function () {
+    const menuLinks = document.querySelectorAll(".menu-link");
+    function setActive(event) {
+        menuLinks.forEach(link => link.classList.remove("border-b-2", "border-black", "pb-1"));
+        event.currentTarget.classList.add("border-b-2", "border-black", "pb-1");
+        localStorage.setItem("activeLink", event.currentTarget.getAttribute("href"));
+    }
+    menuLinks.forEach(link => link.addEventListener("click", setActive));
+    const activeLink = localStorage.getItem("activeLink");
+    if (activeLink) {
+        menuLinks.forEach(link => {
+            if (link.getAttribute("href") === activeLink) {
+                link.classList.add("border-b-2", "border-black", "pb-1");
+            }
+        });
+    }
+});
 
-function setActive(event) {
-    menuLinks.forEach(link => link.classList.remove("border-b", "border-black", "pb-1"));
-    event.target.classList.add("border-b", "border-black", "pb-1");
-}
-menuLinks.forEach(link => link.addEventListener("click", setActive));
 
 
 // accordian icon
@@ -64,19 +75,19 @@ document.querySelectorAll('[data-accordion-target]').forEach(button => {
 
 // service page 
 
-$(document).ready(function(){
+$(document).ready(function () {
     $(".expertise-carousel").owlCarousel({
-        loop: true,           
-        margin: 10,           
-        nav: true,            
-        dots: false,           
-        autoplay: true,       
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        autoplay: true,
         autoplayTimeout: 3000,
         navText: ["<span class='custom-prev'>&#10094;</span>", "<span class='custom-next'>&#10095;</span>"],
-        responsive:{
-            0:{ items: 1 },   
-            600:{ items: 1 }, 
-            1000:{ items: 1 } 
+        responsive: {
+            0: { items: 1 },
+            600: { items: 1 },
+            1000: { items: 1 }
         }
     });
 });
