@@ -27,7 +27,8 @@ p {
 input[type="checkbox"] {
   accent-color: #353424;
   width: 15px;
-  height: 15px; /* Change to your desired color */
+  height: 15px;
+  /* Change to your desired color */
 }
 
 .commonblock {
